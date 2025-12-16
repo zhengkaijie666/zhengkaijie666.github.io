@@ -1,0 +1,54 @@
+/*  hover时的基础变形效果 */
+.transform-hover {
+    transition: transform 0.3s ease;
+}
+.transform-hover:hover {
+    transform: scale(1.05) translateY(-5px);
+}
+
+/*  hover时旋转图片 */
+.rotate-image {
+    transition: transform 0.4s ease;
+}
+.rotate-image:hover {
+    transform: rotate(10deg);
+}
+
+/* 按钮的颜色平滑过渡 */
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* 淡入动画关键帧 */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+/* 应用动画到元素 */
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* 带hover效果的卡片 */
+.card {
+    width: 250px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    margin: 10px 0;
+}
+.card:hover {
+    transform: rotate(-2deg) scale(1.03);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}

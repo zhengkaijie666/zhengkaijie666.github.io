@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>校园信息页</title>
+    <!-- 引入 CSS 样式文件 -->
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <title>校园信息/注册表单</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- 关键：引用CSS -->
+</head>
+<body>
+<!-- 3) 固定定位导航栏 -->
+<div class="fixed-nav">导航栏（固定定位，滚动页面也不会消失）</div>
+
+<!-- 预留顶部空间（避免内容被固定导航栏遮挡） -->
+<div style="margin-top: 60px;"></div>
+
+<!-- 2) display 属性演示 -->
+<h3>display/visibility 隐藏效果演示</h3>
+<p>这是正常显示的段落。</p>
+<p class="hide-with-visibility">这段文字隐藏但保留占位（你能看到空白区域）。</p>
+<p class="hide-with-display">这段文字完全隐藏（无任何占位）。</p>
+
+<!-- 3) position 定位演示 -->
+<h3>position 定位演示</h3>
+<div class="relative-box">这个盒子是相对定位（相对于自身原位置向下/右偏移）。</div>
+<div class="absolute-box">这个盒子是绝对定位（相对于视口右上角）。</div>
+
+<!-- 4) float 文字环绕图片 -->
+<h3>float 文字环绕图片演示</h3>
+<img src="images/campus.jpg" alt="校园风景" class="float-left">
+<p>
+    这是环绕图片的文字段落。
+</p>
+<!-- 1. 带旋转效果的图片 -->
+<img src="images/campus.jpg" alt="校园" class="rotate-image float-left" style="margin-right: 20px; width: 300px;"> <!-- 可选：添加宽度和间距，避免布局混乱 -->
+
+<!-- 2. 带缩放+平移效果的按钮 -->
+<button class="transform-hover">点击咨询</button>
+
+<!-- 3. 带淡入动画的欢迎信息 -->
+<h2 class="fade-in">欢迎来到校园信息中心</h2>
+
+<!-- 4. 带组合交互效果的卡片 -->
+<div class="card">
+    <h4>学生社团</h4>
+    <p>即刻加入计算机科学社团吧！定期举办技术分享、编程竞赛等活动~</p>
+</div>
+<!-- 清除浮动（避免后续内容布局错乱） -->
+<div style="clear: both;"></div>
+</body>
+</html>
